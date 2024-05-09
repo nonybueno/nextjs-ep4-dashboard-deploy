@@ -10,7 +10,7 @@ import { useSession } from 'next-auth/react'
 import { redirect } from 'next/navigation'
 import DeleteBtn from './DeleteBtn'
 
-function welcomePage() {
+function WelcomePage() {
 
     const { data: session } = useSession()
     if(!session) redirect("/login");
@@ -96,4 +96,4 @@ function welcomePage() {
   )
 }
 
-export default welcomePage
+export default WelcomePage

@@ -8,7 +8,7 @@ import Link from 'next/link'
 import { useSession } from 'next-auth/react'
 import { redirect } from 'next/navigation'
 
-function registerPage() {
+function RegisterPage() {
     const  [name, setName] = useState("")
     const  [email, setEmail] = useState("")
     const  [password, setPassword] = useState("")
@@ -109,4 +109,4 @@ function registerPage() {
   )
 }
 
-export default registerPage
+export default RegisterPage

@@ -9,8 +9,7 @@ import { signIn } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 
-
-function loginPage() {
+function LoginPage() {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -20,7 +19,6 @@ function loginPage() {
 
     const { data: session } = useSession()
     if(session) router.replace("welcome")
-    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -74,4 +72,4 @@ function loginPage() {
   )
 }
 
-export default loginPage
+export default LoginPage
