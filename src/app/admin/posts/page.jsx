@@ -25,7 +25,7 @@ function AdminPostManagePage() {
     const getAllPostsData = async () => {
         try{
 
-            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/totalposts`,{
+            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}api/totalposts`,{
                 cache: "no-store"
             })
 

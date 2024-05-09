@@ -35,7 +35,7 @@ function CreatePage() {
 
         try{
             
-            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/posts`, {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}api/posts`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
