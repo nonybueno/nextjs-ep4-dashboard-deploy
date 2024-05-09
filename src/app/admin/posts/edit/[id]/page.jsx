@@ -32,7 +32,7 @@ function AdminEditePostPage({ params }) {
     const getPostById = async (id) => {
         try{
 
-            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}api/totalposts/${id}`,{
+            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/totalposts/${id}`,{
                 method: "GET",
                 cache: "no-store"
             })
@@ -58,7 +58,7 @@ function AdminEditePostPage({ params }) {
 
         try{
 
-            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}api/totalposts/${id}`,{
+            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/totalposts/${id}`,{
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
